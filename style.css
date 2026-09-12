@@ -3,7 +3,7 @@
 :root {
   --ink: #26322e;
   --ink-soft: #4a564f;
-  --bg: #f1f3ec;
+  --bg: #ffffff;
   --bg-panel: #f7ecb5;
   --sage: #7c9683;
   --sage-dark: #5c7565;
@@ -166,25 +166,7 @@ a:hover { color: var(--rose); }
   overflow: hidden;
 }
 
-.hero-inner {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 2rem;
-  align-items: center;
-}
-
 .hero-text { max-width: 34rem; }
-
-.hero-figure {
-  display: flex;
-  justify-content: center;
-  animation: hero-in 0.9s ease-out both;
-}
-
-@keyframes hero-in {
-  from { opacity: 0; transform: translateY(14px) scale(0.98); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
-}
 
 /* Sections */
 section { padding: 3.4rem 0; }
@@ -332,8 +314,6 @@ textarea { resize: vertical; min-height: 140px; }
 
 /* Responsive */
 @media (max-width: 800px) {
-  .hero-inner { grid-template-columns: 1fr; }
-  .hero-figure { order: -1; max-width: 220px; margin: 0 auto; }
   .grid-3, .steps { grid-template-columns: 1fr; gap: 1.6rem; }
   .grid-2, .contact-grid { grid-template-columns: 1fr; }
 
