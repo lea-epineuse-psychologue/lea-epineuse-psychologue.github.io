@@ -1,2 +1,107 @@
-Bonjour
-salut
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil — [Votre nom], Psychologue</title>
+<meta name="description" content="Psychologue en Loire-Atlantique : consultations individuelles, bilans de neuropsychologie, soutien à la parentalité et accompagnement familial.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="wordmark">[Votre nom]<span>Psychologue</span></a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="site-nav">
+      <a href="index.html" aria-current="page">Accueil</a>
+      <a href="presentation.html">Présentation</a>
+      <a href="prestations.html">Prestations &amp; tarifs</a>
+      <a href="rendez-vous.html">Prendre rendez-vous</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <h1>Un espace pour parler, comprendre, avancer</h1>
+        <p>Psychologue en Loire-Atlantique, j'accompagne enfants, adolescents, adultes et familles à travers des consultations individuelles, des bilans de neuropsychologie et un soutien à la parentalité.</p>
+        <div class="btn-row">
+          <a href="rendez-vous.html" class="btn btn-primary">Prendre rendez-vous</a>
+          <a href="prestations.html" class="btn btn-secondary">Découvrir les prestations</a>
+        </div>
+      </div>
+      <div class="hero-figure">
+        <svg width="280" height="280" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration abstraite évoquant le calme">
+          <circle cx="150" cy="130" r="105" fill="#7c9683" opacity="0.35"/>
+          <path d="M90 70 C 150 20, 230 60, 220 130 C 210 200, 140 230, 90 200 C 40 170, 40 110, 90 70 Z" fill="#9c5b6b" opacity="0.28"/>
+          <circle cx="110" cy="150" r="60" fill="#26322e" opacity="0.12"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Comment je peux vous accompagner</h2>
+      </div>
+      <div class="grid-3">
+        <div class="item">
+          <h3>Consultations individuelles</h3>
+          <p>Pour les enfants, les adolescents et les adultes, autour de ce qui vous amène à consulter aujourd'hui.</p>
+        </div>
+        <div class="item">
+          <h3>Bilans de neuropsychologie</h3>
+          <p>Une évaluation complète pour mieux comprendre le fonctionnement cognitif et poser des repères clairs.</p>
+        </div>
+        <div class="item">
+          <h3>Soutien à la parentalité</h3>
+          <p>Des entretiens pour traverser les questions et les difficultés qui se posent dans le rôle de parent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap grid-2">
+      <div>
+        <h2>Un accompagnement pensé pour les familles</h2>
+        <p>Au-delà du suivi individuel, je propose un accompagnement familial et un soutien psychologique spécifiquement adapté aux familles concernées par le handicap. Chaque situation est différente : le cadre s'ajuste à ce dont vous avez besoin.</p>
+        <p><a href="prestations.html">Voir le détail des prestations et des tarifs →</a></p>
+      </div>
+      <div>
+        <h2>En Loire-Atlantique</h2>
+        <p>Je reçois au sein d'un cabinet partagé pluridisciplinaire à Savenay (44), à quelques jours par semaine. Les rendez-vous se prennent en ligne ou par téléphone.</p>
+        <p><a href="contact.html">Voir les coordonnées et l'accès →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="callout">
+        <h2>Envie d'échanger avant de vous engager ?</h2>
+        <p>Un premier contact, par téléphone ou par mail, permet de poser vos questions et de voir ensemble si l'accompagnement vous convient.</p>
+        <a href="rendez-vous.html" class="btn btn-primary">Prendre rendez-vous</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> [Votre nom] — Psychologue</span>
+    <span>Cabinet à Savenay (44) — [Numéro ADELI à compléter]</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
