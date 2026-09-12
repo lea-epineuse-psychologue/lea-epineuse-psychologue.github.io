@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — [Votre nom], Psychologue</title>
+<meta name="description" content="Coordonnées et accès du cabinet, à Savenay en Loire-Atlantique.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="wordmark">[Votre nom]<span>Psychologue</span></a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="presentation.html">Présentation</a>
+      <a href="prestations.html">Prestations &amp; tarifs</a>
+      <a href="rendez-vous.html">Prendre rendez-vous</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom: 1rem;">
+    <div class="wrap">
+      <div class="hero-text">
+        <h1>Contact</h1>
+        <p>Pour toute question, avant même de prendre rendez-vous, n'hésitez pas à écrire ou à appeler.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap contact-grid">
+      <div>
+        <div class="info-block">
+          <h3>Cabinet</h3>
+          <p>[Nom du cabinet partagé]<br>
+          [Adresse à compléter]<br>
+          Savenay, Loire-Atlantique (44)</p>
+        </div>
+        <div class="info-block">
+          <h3>Coordonnées</h3>
+          <p>Téléphone : [à compléter]<br>
+          E-mail : [à compléter]</p>
+        </div>
+        <div class="info-block">
+          <h3>Jours de présence</h3>
+          <p>[À compléter : par exemple, lundi et mercredi après-midi]</p>
+        </div>
+      </div>
+
+      <div>
+        <h3>Envoyer un message</h3>
+        <p class="note" style="margin-top: -0.6em;">Ce formulaire ouvre votre messagerie habituelle. Pour un formulaire envoyé directement depuis le site, un service comme Formspree peut être ajouté par la suite.</p>
+        <form class="contact-form" action="mailto:votre-adresse@exemple.fr" method="post" enctype="text/plain">
+          <div>
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> [Votre nom] — Psychologue</span>
+    <span>Cabinet à Savenay (44) — [Numéro ADELI à compléter]</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
