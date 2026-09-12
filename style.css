@@ -3,7 +3,7 @@
 :root {
   --ink: #26322e;
   --ink-soft: #4a564f;
-  --bg: #fffcf2;
+  --bg: #fffefa;
   --bg-panel: #f7ecb5;
   --sage: #7c9683;
   --sage-dark: #5c7565;
@@ -137,12 +137,14 @@ a:hover { color: var(--rose); }
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
+  padding: 0.6rem 1.35rem;
+  border-radius: 999px;
   text-decoration: none;
-  font-size: 0.98rem;
+  font-size: 0.92rem;
   font-weight: 500;
+  letter-spacing: 0.01em;
   border: 1px solid transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .btn-primary {
@@ -157,7 +159,7 @@ a:hover { color: var(--rose); }
 }
 .btn-secondary:hover { background: var(--ink); color: var(--bg); }
 
-.btn-row { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.6rem; }
+.btn-row { display: flex; gap: 0.85rem; flex-wrap: wrap; margin-top: 1.6rem; }
 
 /* Hero */
 .hero {
