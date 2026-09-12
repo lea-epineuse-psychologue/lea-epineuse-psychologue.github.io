@@ -156,10 +156,13 @@ a:hover { color: var(--rose); }
 .btn-primary:hover { background: var(--rose); color: #fff; }
 
 .btn-secondary {
-  border-color: var(--ink);
+  border-color: rgba(38, 50, 46, 0.25);
   color: var(--ink);
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px) saturate(160%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
 }
-.btn-secondary:hover { background: var(--ink); color: var(--bg); }
+.btn-secondary:hover { background: rgba(38, 50, 46, 0.08); border-color: var(--ink); }
 
 .btn-row { display: flex; gap: 0.85rem; flex-wrap: wrap; margin-top: 1.6rem; }
 
