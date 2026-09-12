@@ -89,6 +89,7 @@ a:hover { color: var(--rose); }
   width: 44px;
   display: block;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .wordmark-text {
