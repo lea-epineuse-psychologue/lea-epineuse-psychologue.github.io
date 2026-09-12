@@ -4,11 +4,11 @@
   --ink: #26322e;
   --ink-soft: #4a564f;
   --bg: #f1f3ec;
-  --bg-panel: #e6ebde;
+  --bg-panel: #f7ecb5;
   --sage: #7c9683;
   --sage-dark: #5c7565;
-  --rose: #9c5b6b;
-  --rose-dark: #7e4756;
+  --rose: #d97706;
+  --rose-dark: #b45309;
   --line: rgba(38, 50, 46, 0.16);
   --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
   --font-sans: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -74,16 +74,29 @@ a:hover { color: var(--rose); }
 }
 
 .wordmark {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
   font-family: var(--font-serif);
   font-size: 1.15rem;
   color: var(--ink);
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
   line-height: 1.2;
 }
 
-.wordmark span {
+.wordmark img {
+  height: 44px;
+  width: 44px;
+  display: block;
+  border-radius: 50%;
+}
+
+.wordmark-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.wordmark-text span {
   font-family: var(--font-sans);
   font-size: 0.78rem;
   color: var(--ink-soft);
