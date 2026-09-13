@@ -8,6 +8,12 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-banner-inner">
+      <span>Ce site n'utilise aucun cookie de suivi ni de mesure d'audience.</span>
+      <button class="cookie-banner-close" id="cookie-banner-close" aria-label="Fermer">×</button>
+    </div>
+  </div>
 
 <header class="site-header">
   <div class="wrap header-inner">
@@ -42,37 +48,35 @@
       <div class="info-block">
         <h3>Éditeur du site</h3>
         <p>
-          [Votre nom], EI (entreprise individuelle)<br>
-          Psychologue — titre protégé par la loi n°85-772 du 25 juillet 1985<br>
-          Numéro ADELI : [à compléter]<br>
-          Adresse professionnelle : [à compléter]<br>
-          SIRET : [à compléter]<br>
-          TVA non applicable, article 293 B du Code général des impôts<br>
-          E-mail : [à compléter]<br>
-          Téléphone : [à compléter]
+          Nom : <strong>[Votre nom], EI (entreprise individuelle)</strong><br>
+          Profession : <strong>Psychologue</strong> — titre protégé par la loi n°85-772 du 25 juillet 1985<br>
+          Numéro ADELI : <strong>[à compléter]</strong><br>
+          Adresse professionnelle : <strong>[à compléter]</strong><br>
+          SIRET : <strong>[à compléter]</strong><br>
+          TVA : <strong>non applicable</strong>, article 293 B du Code général des impôts<br>
+          E-mail : <strong>[à compléter]</strong><br>
+          Téléphone : <strong>[à compléter]</strong>
         </p>
       </div>
 
       <div class="info-block">
         <h3>Directeur de la publication</h3>
-        <p>[Votre nom]</p>
+        <p>Mme <strong>[Votre nom]</strong></p>
       </div>
 
       <div class="info-block">
         <h3>Hébergement du site</h3>
         <p>
-          GitHub, Inc.<br>
-          88 Colin P Kelly Jr Street<br>
-          San Francisco, CA 94107<br>
-          États-Unis<br>
-          <a href="https://github.com" target="_blank" rel="noopener">github.com</a>
+          Société : <strong>GitHub, Inc.</strong><br>
+          Adresse : 88 Colin P Kelly Jr Street, San Francisco, CA 94107, États-Unis<br>
+          Site : <a href="https://github.com" target="_blank" rel="noopener">github.com</a>
         </p>
         <p class="note">[À vérifier : ces coordonnées correspondent à l'hébergement standard GitHub Pages ; à confirmer avant publication.]</p>
       </div>
 
       <div class="info-block">
         <h3>Prise de rendez-vous en ligne</h3>
-        <p>La prise de rendez-vous en ligne est assurée par un service tiers (Cal.com). Les informations que vous transmettez lors d'une réservation (nom, e-mail, créneau choisi) sont traitées par ce service selon sa propre politique de confidentialité.</p>
+        <p>La prise de rendez-vous en ligne est assurée par un service tiers : <strong>Cal.com</strong>. Les informations que vous transmettez lors d'une réservation (nom, e-mail, créneau choisi) sont traitées par ce service selon sa propre politique de confidentialité.</p>
       </div>
 
       <div class="info-block">
@@ -100,10 +104,12 @@
     <span>© <span id="year"></span> Léa Épineuse — Psychologue</span>
     <span>Cabinet en Loire-Atlantique — [Numéro ADELI à compléter]</span>
     <a href="mentions-legales.html">Mentions légales</a>
+    <a href="confidentialite.html">Confidentialité</a>
   </div>
 </footer>
 
 <script src="script.js"></script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<a href="rendez-vous.html" class="btn btn-primary floating-cta" id="floating-cta">Prendre rendez-vous</a>
 </body>
 </html>
