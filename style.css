@@ -320,6 +320,13 @@ textarea { resize: vertical; min-height: 140px; }
   gap: 1rem;
 }
 
+.footer-inner a {
+  color: var(--ink-soft);
+  text-decoration: underline;
+}
+.footer-inner a:hover { color: var(--ink); }
+
+
 /* Responsive */
 @media (max-width: 800px) {
   .grid-3, .steps { grid-template-columns: 1fr; gap: 1.6rem; }
