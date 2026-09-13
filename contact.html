@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — [Votre nom], Psychologue</title>
+<title>Contact — Léa Épineuse, Psychologue</title>
 <meta name="description" content="Coordonnées et accès du cabinet, à Savenay en Loire-Atlantique.">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -11,7 +11,10 @@
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a href="index.html" class="wordmark">[Votre nom]<span>Psychologue</span></a>
+    <a href="index.html" class="wordmark">
+      <img src="logo.carre.png" alt="Logo du cabinet de Léa Épineuse">
+      <span class="wordmark-text">Léa Épineuse<span>Psychologue</span></span>
+    </a>
     <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
     <nav class="site-nav">
       <a href="index.html">Accueil</a>
@@ -56,22 +59,8 @@
 
       <div>
         <h3>Envoyer un message</h3>
-        <p class="note" style="margin-top: -0.6em;">Ce formulaire ouvre votre messagerie habituelle. Pour un formulaire envoyé directement depuis le site, un service comme Formspree peut être ajouté par la suite.</p>
-        <form class="contact-form" action="mailto:votre-adresse@exemple.fr" method="post" enctype="text/plain">
-          <div>
-            <label for="name">Nom</label>
-            <input id="name" name="name" type="text" required>
-          </div>
-          <div>
-            <label for="email">E-mail</label>
-            <input id="email" name="email" type="email" required>
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Envoyer</button>
-        </form>
+        <p class="note" style="margin-top: -0.6em;">Le plus simple est de m'écrire directement par e-mail, en précisant votre demande et vos disponibilités.</p>
+        <a href="mailto:votre-adresse@exemple.fr" class="btn btn-primary">M'écrire par e-mail</a>
       </div>
     </div>
   </section>
@@ -83,7 +72,6 @@
     <span>© <span id="year"></span> Léa Épineuse — Psychologue</span>
     <span>Cabinet à Savenay (44) — [Numéro ADELI à compléter]</span>
     <a href="mentions-legales.html">Mentions légales</a>
-    <a href="confidentialite.html">Confidentialité</a>
   </div>
 </footer>
 
