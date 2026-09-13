@@ -326,7 +326,6 @@ textarea { resize: vertical; min-height: 140px; }
 }
 .footer-inner a:hover { color: var(--ink); }
 
-
 /* Responsive */
 @media (max-width: 800px) {
   .grid-3, .steps { grid-template-columns: 1fr; gap: 1.6rem; }
@@ -341,9 +340,9 @@ textarea { resize: vertical; min-height: 140px; }
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(255, 254, 250, 0.7);
-    backdrop-filter: blur(16px) saturate(160%);
-    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    background: rgba(255, 254, 250, 0.45);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
     border-bottom: 1px solid var(--line);
   }
   .site-nav.open { display: flex; }
