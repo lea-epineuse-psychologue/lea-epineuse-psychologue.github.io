@@ -8,6 +8,12 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-banner-inner">
+      <span>Ce site n'utilise aucun cookie de suivi ni de mesure d'audience.</span>
+      <button class="cookie-banner-close" id="cookie-banner-close" aria-label="Fermer">×</button>
+    </div>
+  </div>
 
 <header class="site-header">
   <div class="wrap header-inner">
@@ -42,9 +48,9 @@
 
       <div class="info-block">
         <h3>Responsable du traitement</h3>
-        <p>[Votre nom], psychologue, EI<br>
-        Adresse professionnelle : [à compléter]<br>
-        E-mail : [à compléter]</p>
+        <p>Nom : <strong>[Votre nom]</strong>, psychologue, EI<br>
+        Adresse professionnelle : <strong>[à compléter]</strong><br>
+        E-mail : <strong>[à compléter]</strong></p>
       </div>
 
       <div class="info-block">
@@ -54,7 +60,7 @@
 
       <div class="info-block">
         <h3>Prise de rendez-vous en ligne</h3>
-        <p>La prise de rendez-vous s'effectue via le service tiers Cal.com. Lorsque vous réservez un créneau, vous transmettez directement à Cal.com votre nom, votre adresse e-mail et le créneau choisi, afin de permettre l'organisation du rendez-vous et l'envoi des confirmations et rappels. Ces informations sont traitées par Cal.com selon sa propre politique de confidentialité, disponible sur son site.</p>
+        <p>La prise de rendez-vous s'effectue via le service tiers <strong>Cal.com</strong>. Lorsque vous réservez un créneau, vous transmettez directement à Cal.com votre nom, votre adresse e-mail et le créneau choisi, afin de permettre l'organisation du rendez-vous et l'envoi des confirmations et rappels. Ces informations sont traitées par Cal.com selon sa propre politique de confidentialité, disponible sur son site.</p>
       </div>
 
       <div class="info-block">
@@ -64,7 +70,7 @@
 
       <div class="info-block">
         <h3>Polices de caractères</h3>
-        <p>Ce site charge des polices d'écriture (Google Fonts) directement depuis les serveurs de Google, ce qui peut entraîner la transmission de votre adresse IP à Google au moment du chargement de la page.</p>
+        <p>Ce site charge des polices d'écriture (<strong>Google Fonts</strong>) directement depuis les serveurs de Google, ce qui peut entraîner la transmission de votre adresse IP à Google au moment du chargement de la page.</p>
       </div>
 
       <div class="info-block">
@@ -94,5 +100,6 @@
 
 <script src="script.js"></script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<a href="rendez-vous.html" class="btn btn-primary floating-cta" id="floating-cta">Prendre rendez-vous</a>
 </body>
 </html>
