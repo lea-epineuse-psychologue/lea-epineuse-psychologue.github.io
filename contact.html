@@ -8,6 +8,12 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-banner-inner">
+      <span>Ce site n'utilise aucun cookie de suivi ni de mesure d'audience.</span>
+      <button class="cookie-banner-close" id="cookie-banner-close" aria-label="Fermer">×</button>
+    </div>
+  </div>
 
 <header class="site-header">
   <div class="wrap header-inner">
@@ -55,6 +61,18 @@
           <h3>Jours de présence</h3>
           <p>[À compléter : par exemple, lundi et mercredi après-midi]</p>
         </div>
+        <div class="info-block">
+          <h3>Plan d'accès</h3>
+          <p class="note" style="margin-top: -0.4em;">La carte s'affichera ici une fois l'adresse du cabinet renseignée.</p>
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps?q=ADRESSE+A+REMPLACER&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localisation du cabinet">
+            </iframe>
+          </div>
+        </div>
       </div>
 
       <div>
@@ -72,10 +90,12 @@
     <span>© <span id="year"></span> Léa Épineuse — Psychologue</span>
     <span>Cabinet en Loire-Atlantique — [Numéro ADELI à compléter]</span>
     <a href="mentions-legales.html">Mentions légales</a>
+    <a href="confidentialite.html">Confidentialité</a>
   </div>
 </footer>
 
 <script src="script.js"></script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<a href="rendez-vous.html" class="btn btn-primary floating-cta" id="floating-cta">Prendre rendez-vous</a>
 </body>
 </html>
