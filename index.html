@@ -8,6 +8,12 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-banner-inner">
+      <span>Ce site n'utilise aucun cookie de suivi ni de mesure d'audience.</span>
+      <button class="cookie-banner-close" id="cookie-banner-close" aria-label="Fermer">×</button>
+    </div>
+  </div>
 
 <header class="site-header">
   <div class="wrap header-inner">
@@ -95,10 +101,12 @@
     <span>© <span id="year"></span> Léa Épineuse — Psychologue</span>
     <span>Cabinet en Loire-Atlantique — [Numéro ADELI à compléter]</span>
     <a href="mentions-legales.html">Mentions légales</a>
+    <a href="confidentialite.html">Confidentialité</a>
   </div>
 </footer>
 
 <script src="script.js"></script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<a href="rendez-vous.html" class="btn btn-primary floating-cta" id="floating-cta">Prendre rendez-vous</a>
 </body>
 </html>
