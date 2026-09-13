@@ -379,34 +379,6 @@ textarea { resize: vertical; min-height: 140px; }
 
 .cookie-banner.hidden { display: none; }
 
-/* Bouton flottant "Prendre rendez-vous" */
-.floating-cta {
-  position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  z-index: 30;
-  box-shadow: 0 8px 20px rgba(38, 50, 46, 0.3);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(12px);
-  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-}
-
-.floating-cta.visible {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-@media (max-width: 480px) {
-  .floating-cta {
-    bottom: 1rem;
-    right: 1rem;
-    padding: 0.65rem 1.1rem;
-    font-size: 0.88rem;
-  }
-}
-
 /* Carte */
 .map-embed {
   aspect-ratio: 16 / 9;
