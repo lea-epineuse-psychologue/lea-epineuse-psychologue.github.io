@@ -26,19 +26,45 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  var cta = document.getElementById('floating-cta');
-  if (!cta) return;
+  var buttons = document.querySelectorAll('.price-summary-btn');
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.closest('.price-details');
+      var content = item.querySelector('.price-details-content');
+      var isOpen = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      content.hidden = !isOpen;
+    });
+  });
+});
 
-  var threshold = 400;
+document.addEventListener('DOMContentLoaded', function () {
+  var openBtn = document.getElementById('open-booking-modal');
+  var modal = document.getElementById('booking-modal');
+  if (!openBtn || !modal) return;
 
-  function toggleCta() {
-    if (window.scrollY > threshold) {
-      cta.classList.add('visible');
-    } else {
-      cta.classList.remove('visible');
-    }
+  var closeBtn = document.getElementById('close-booking-modal');
+
+  function openModal() {
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
   }
 
-  window.addEventListener('scroll', toggleCta, { passive: true });
-  toggleCta();
+  function closeModal() {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+    openBtn.focus();
+  }
+
+  openBtn.addEventListener('click', openModal);
+  closeBtn.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', function (e) {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+  });
 });
