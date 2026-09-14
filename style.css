@@ -177,6 +177,34 @@ a:hover { color: var(--rose); }
 
 .hero-text { max-width: 34rem; }
 
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+  width: 160px;
+  max-width: 32vw;
+}
+
+.hero-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  box-shadow: 0 12px 30px rgba(38, 50, 46, 0.18);
+}
+
+@media (max-width: 700px) {
+  .hero-flex { flex-direction: column-reverse; align-items: flex-start; }
+  .hero-photo { width: 130px; max-width: 40vw; }
+}
+
 /* Sections */
 section { padding: 3.4rem 0; }
 
@@ -254,7 +282,7 @@ section { padding: 3.4rem 0; }
 
 .price-summary-text h3 { margin: 0; font-size: 1.05rem; }
 
-.ordinal-num { font-size: 1.5em; font-weight: 600; }
+.ordinal-num { font-size: 1.5em; font-weight: 400; }
 
 .price-toggle {
   align-self: flex-end;
