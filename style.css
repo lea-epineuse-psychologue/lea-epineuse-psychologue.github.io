@@ -232,33 +232,36 @@ section { padding: 3.4rem 0; }
 
 .price-details summary {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.35rem;
   padding: 1.1rem 0;
   cursor: pointer;
   list-style: none;
 }
 .price-details summary::-webkit-details-marker { display: none; }
+.price-details summary::marker { content: ''; display: none; }
+
+.price-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
 
 .price-summary-text h3 { margin: 0; font-size: 1.05rem; }
 
-.price-summary-meta {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  flex-shrink: 0;
-}
-.price-summary-meta::after {
-  content: '+';
+.ordinal-num { font-size: 1.35em; }
+
+.price-toggle {
+  align-self: flex-end;
   font-family: var(--font-serif);
   font-size: 1.3rem;
   color: var(--sage-dark);
-  display: inline-block;
-  transition: transform 0.2s ease;
   line-height: 1;
+  transition: transform 0.2s ease;
 }
-.price-details[open] .price-summary-meta::after { transform: rotate(45deg); }
+.price-details[open] .price-toggle { transform: rotate(45deg); }
 
 .price-details-content {
   padding: 0 0 1.2rem;
@@ -266,19 +269,6 @@ section { padding: 3.4rem 0; }
   font-size: 0.95rem;
 }
 .price-details-content p { margin: 0; max-width: 56ch; }
-
-.price-amount {
-  font-family: var(--font-serif);
-  font-size: 1.3rem;
-  white-space: nowrap;
-  color: var(--rose-dark);
-}
-
-.note {
-  font-size: 0.92rem;
-  color: var(--ink-soft);
-  margin-top: 1.2rem;
-}
 
 /* Steps (legitimate sequence) */
 .steps {
