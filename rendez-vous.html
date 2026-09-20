@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Prendre rendez-vous — Léa Épineuse, Psychologue</title>
 <meta name="description" content="Comment prendre rendez-vous pour une consultation ou un bilan de neuropsychologie.">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
   <div class="cookie-banner" id="cookie-banner">
@@ -69,26 +69,49 @@
     <div class="wrap">
       <div class="callout">
         <h2>Réserver en ligne</h2>
-        <p>La prise de rendez-vous en ligne se fait via Cal.com. Vous pourrez y choisir le type de consultation qui correspond à votre situation.</p>
-        <a href="https://cal.com/lea-epineuse-psychologue" target="_blank" rel="noopener" class="btn btn-primary">Réserver en ligne</a>
+        <p>La prise de rendez-vous en ligne se fait via Cal.com. Choisissez le créneau qui correspond à votre situation.</p>
+        <button type="button" class="btn btn-primary" id="open-booking-modal" aria-haspopup="dialog" aria-controls="booking-modal">Réserver en ligne</button>
       </div>
     </div>
   </section>
+
+  <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="close-booking-modal" aria-label="Fermer la fenêtre">×</button>
+      <h2 id="booking-modal-title">Choisissez votre créneau</h2>
+      <div class="modal-group">
+        <h3>Enfant &amp; adolescent</h3>
+        <div class="btn-stack">
+          <a href="https://cal.com/lea-epineuse-psychologue/enfant-adolescent-1er-rendez-vous-de-consultation" target="_blank" rel="noopener" class="btn btn-primary">1er rendez-vous de consultation</a>
+          <a href="https://cal.com/lea-epineuse-psychologue/enfant-adolescent-consultation-de-suivi-psychologique" target="_blank" rel="noopener" class="btn btn-secondary">Consultation de suivi</a>
+          <a href="https://cal.com/lea-epineuse-psychologue/adolescent-consultation-de-suivi-psychologique-visio" target="_blank" rel="noopener" class="btn btn-secondary">Consultation de suivi — visio (ado)</a>
+        </div>
+      </div>
+      <div class="modal-group">
+        <h3>Adulte</h3>
+        <div class="btn-stack">
+          <a href="https://cal.com/lea-epineuse-psychologue/adulte-1er-rendez-vous-consultation" target="_blank" rel="noopener" class="btn btn-primary">1er rendez-vous de consultation</a>
+          <a href="https://cal.com/lea-epineuse-psychologue/adulte-consultation-de-suivi-psychologique" target="_blank" rel="noopener" class="btn btn-secondary">Consultation de suivi</a>
+          <a href="https://cal.com/lea-epineuse-psychologue/adulte-consultation-de-suivi-psychologique-visio" target="_blank" rel="noopener" class="btn btn-secondary">Consultation de suivi — visio</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section>
     <div class="wrap">
       <div class="info-block">
         <h3>Vous préférez appeler ou écrire directement ?</h3>
         <p>Téléphone : [à compléter]<br>
-        E-mail : lea.epineuse.psychologue@gmail.com</p>
+        E-mail : l.epineuse.psychologue@gmail.com</p>
         <p><a href="contact.html">Voir toutes les coordonnées →</a></p>
       </div>
       <div class="info-block">
         <h3>Plan d'accès</h3>
-        <p class="note" style="margin-top: -0.4em;">Carte centrée sur Vertou — à affiner avec l'adresse exacte du cabinet une fois connue.</p>
+        <p class="note" style="margin-top: -0.4em;">Cabinet situé Place de l'Europe, à Rezé.</p>
         <div class="map-embed">
           <iframe
-            src="https://www.google.com/maps?q=Vertou&output=embed"
+            src="https://www.google.com/maps?q=Place+de+l'Europe+44400+Rezé&output=embed"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             title="Localisation du cabinet">
@@ -109,7 +132,7 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=2"></script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
