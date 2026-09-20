@@ -37,34 +37,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-  var openBtn = document.getElementById('open-booking-modal');
-  var modal = document.getElementById('booking-modal');
-  if (!openBtn || !modal) return;
-
-  var closeBtn = document.getElementById('close-booking-modal');
-
-  function openModal() {
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    closeBtn.focus();
-  }
-
-  function closeModal() {
-    modal.classList.remove('open');
-    document.body.style.overflow = '';
-    openBtn.focus();
-  }
-
-  openBtn.addEventListener('click', openModal);
-  closeBtn.addEventListener('click', closeModal);
-
-  modal.addEventListener('click', function (e) {
-    if (e.target === modal) closeModal();
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
-  });
-});
