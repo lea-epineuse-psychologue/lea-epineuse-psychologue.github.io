@@ -345,6 +345,7 @@ section { padding: 3.4rem 0; }
   color: var(--ink-soft);
   margin-top: 1.2rem;
 }
+.note-wide { max-width: none; }
 
 .attention-note {
   font-size: 0.95rem;
