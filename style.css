@@ -292,7 +292,13 @@ section { padding: 3.4rem 0; }
   width: 100%;
 }
 
-.price-summary-text h3 { margin: 0; font-size: 1.05rem; }
+.price-summary-text { min-width: 0; }
+.price-summary-text h3 { margin: 0; font-size: 1.05rem; white-space: nowrap; }
+.price-amount { flex-shrink: 0; }
+
+@media (max-width: 480px) {
+  .price-summary-text h3 { font-size: 0.88rem; }
+}
 
 .ordinal-num { font-size: 1.5em; font-weight: 400; }
 
