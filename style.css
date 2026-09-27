@@ -294,11 +294,6 @@ section { padding: 3.4rem 0; }
 
 .price-summary-text { min-width: 0; }
 .price-summary-text h3 { margin: 0; font-size: 1.05rem; white-space: nowrap; }
-.price-amount { flex-shrink: 0; }
-
-@media (max-width: 480px) {
-  .price-summary-text h3 { font-size: 0.88rem; }
-}
 
 .ordinal-num { font-size: 1.5em; font-weight: 400; }
 
@@ -344,6 +339,7 @@ section { padding: 3.4rem 0; }
   font-size: 1.3rem;
   white-space: nowrap;
   color: var(--rose-dark);
+  flex-shrink: 0;
 }
 
 .note {
@@ -476,6 +472,10 @@ textarea { resize: vertical; min-height: 140px; }
   }
   .site-nav.open { display: flex; }
   .site-nav a { padding: 0.9rem 1.5rem; border-bottom: 1px solid var(--line); }
+}
+
+@media (max-width: 480px) {
+  .price-summary-text h3 { font-size: 0.88rem; }
 }
 
 /* Bandeau cookies */
