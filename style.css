@@ -175,6 +175,11 @@ a:hover { color: var(--rose); }
 }
 
 .hero-text { max-width: 34rem; }
+.hero-text-wide { max-width: none; }
+.hero-text-wide h1 { white-space: nowrap; }
+@media (max-width: 700px) {
+  .hero-text-wide h1 { white-space: normal; }
+}
 
 .hero-flex {
   display: flex;
