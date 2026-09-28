@@ -181,6 +181,12 @@ a:hover { color: var(--rose); }
   .hero-text-wide h1 { white-space: normal; }
 }
 
+.access-note { max-width: none; }
+.bus-line { white-space: nowrap; }
+@media (max-width: 700px) {
+  .bus-line { white-space: normal; }
+}
+
 .hero-flex {
   display: flex;
   align-items: center;
