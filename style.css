@@ -18,7 +18,7 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -486,8 +486,13 @@ textarea { resize: vertical; min-height: 140px; }
   .site-nav a { padding: 0.9rem 1.5rem; border-bottom: 1px solid var(--line); }
 }
 
-@media (max-width: 480px) {
-  .price-summary-text h3 { font-size: 0.88rem; }
+@media (max-width: 600px) {
+  .price-summary-text h3 {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    font-size: 0.98rem;
+  }
 }
 
 /* Bandeau cookies */
