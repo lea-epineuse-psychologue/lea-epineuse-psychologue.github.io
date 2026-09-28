@@ -32,6 +32,7 @@ body {
   background: var(--bg);
   line-height: 1.6;
   font-size: 1.05rem;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -304,7 +305,7 @@ section { padding: 3.4rem 0; }
 }
 
 .price-summary-text { min-width: 0; }
-.price-summary-text h3 { margin: 0; font-size: 1.05rem; white-space: nowrap; }
+.price-summary-text h3 { margin: 0; font-size: 1.05rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 .ordinal-num { font-size: 1.5em; font-weight: 400; }
 
