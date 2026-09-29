@@ -211,9 +211,16 @@ a:hover { color: var(--rose); }
   box-shadow: 0 12px 30px rgba(38, 50, 46, 0.18);
 }
 
+.hero-photo-room {
+  width: 320px;
+  max-width: 42vw;
+}
+.hero-photo-room img { aspect-ratio: 4 / 3; }
+
 @media (max-width: 700px) {
   .hero-flex { flex-direction: column-reverse; align-items: flex-start; }
   .hero-photo { width: 130px; max-width: 40vw; }
+  .hero-photo-room { width: 100%; max-width: 100%; }
 }
 
 /* Sections */
