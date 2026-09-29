@@ -26,6 +26,26 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+  var tabButtons = document.querySelectorAll('.price-tab-btn');
+  if (tabButtons.length) {
+    tabButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var target = btn.getAttribute('data-tab');
+        tabButtons.forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        document.querySelectorAll('[data-tab-panel]').forEach(function (panel) {
+          panel.classList.toggle('active-panel', panel.getAttribute('data-tab-panel') === target);
+        });
+      });
+    });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
   var buttons = document.querySelectorAll('.price-summary-btn');
   buttons.forEach(function (btn) {
     btn.addEventListener('click', function () {
