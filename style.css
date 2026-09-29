@@ -242,6 +242,34 @@ section { padding: 3.4rem 0; }
   gap: 2.4rem;
 }
 
+/* Onglets Adulte / Enfant & adolescent (page Prestations, mobile) */
+.price-tab-switch { display: none; }
+
+.price-tab-btn {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+}
+.price-tab-btn.active {
+  background: var(--rose-dark);
+  border-color: var(--rose-dark);
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .price-tab-switch { display: flex; gap: 0.6rem; margin-bottom: 1.8rem; }
+  .price-tabs [data-tab-panel] { display: none; }
+  .price-tabs [data-tab-panel].active-panel { display: block; }
+}
+
 .item {
   border-top: 2px solid var(--sage-dark);
   padding-top: 1rem;
