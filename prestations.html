@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Accompagnements et tarifs — Léa Épineuse, Psychologue</title>
 <meta name="description" content="Consultations individuelles, bilans de neuropsychologie, soutien à la parentalité, accompagnement familial : accompagnements et tarifs.">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
   <div class="cookie-banner" id="cookie-banner">
@@ -48,8 +48,12 @@
         <h2>Consultations &amp; bilans</h2>
         <p>Cliquez sur un intitulé pour voir le détail de la séance.</p>
       </div>
-      <div class="grid-2">
-        <div class="item">
+      <div class="price-tab-switch" role="tablist">
+        <button type="button" class="price-tab-btn active" data-tab="adulte" role="tab" aria-selected="true">Adulte</button>
+        <button type="button" class="price-tab-btn" data-tab="enfant" role="tab" aria-selected="false">Enfant &amp; adolescent</button>
+      </div>
+      <div class="grid-2 price-tabs">
+        <div class="item active-panel" data-tab-panel="adulte">
           <h3>Adulte</h3>
           <h4 class="price-subhead">Consultations</h4>
           <div class="price-list">
@@ -123,6 +127,7 @@
               </button>
               <div class="price-details-content" hidden>
                 <p>Le bilan psychologique complet permet d'explorer le fonctionnement global de la personne. Il associe l'évaluation du fonctionnement intellectuel (Qi)à l'aide du <strong>WAIS-IV</strong> (test de Wechsler) à une exploration des dimensions psychologiques, émotionnelles et affectives, en fonction de la demande.</p>
+                <p>Les outils utilisés sont adaptés à la situation et à la question posée.</p>
                 <p>Le bilan comprend 3 rendez-vous :</p>
                 <ul>
                   <li>Anamnèse et recueil des éléments cliniques — environ 45 min — 60 €</li>
@@ -178,7 +183,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" data-tab-panel="enfant">
           <h3>Enfant &amp; adolescent</h3>
           <h4 class="price-subhead">Consultations</h4>
           <div class="price-list">
@@ -252,6 +257,7 @@
               </button>
               <div class="price-details-content" hidden>
                 <p>Le bilan psychologique complet permet d'explorer le fonctionnement global de la personne. Il associe l'évaluation du fonctionnement intellectuel (Qi) à l'aide du <strong>WISC-V</strong> (test de Wechsler) à une exploration des dimensions psychologiques, émotionnelles et affectives, en fonction de la demande.</p>
+                <p>Les outils utilisés sont adaptés à la situation et à la question posée.</p>
                 <p>Le bilan comprend 3 rendez-vous :</p>
                 <ul>
                   <li>Anamnèse et recueil des éléments cliniques — environ 45 min — 60 €</li>
@@ -337,7 +343,7 @@
             <span class="price-toggle" aria-hidden="true"></span>
           </button>
           <div class="price-details-content" hidden>
-            <p>Entretien réunissant plusieurs membres de la famille, pour travailler ensemble sur une situation qui les concerne collectivement. Durée indicative : 1h.</p>
+            <p>Entretiens réunissant plusieurs membres de la famille, pour travailler ensemble sur une situation qui les concerne collectivement. Durée indicative : 1h.</p>
           </div>
         </div>
       </div>
@@ -375,7 +381,7 @@
   </div>
 </footer>
 
-<script src="script.js?v=2"></script>
+<script src="script.js?v=7"></script>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
